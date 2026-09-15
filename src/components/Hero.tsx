@@ -55,7 +55,7 @@ export default function Hero() {
         <div className="relative animate-fade-in-up lg:pl-5" style={{ animationDelay: '0.15s' }}>
           <div className="absolute -inset-5 rounded-[2.5rem] bg-gradient-to-br from-blue-100/70 via-white to-green-100/50 blur-2xl" />
           <div className="relative overflow-hidden rounded-[2rem] border-8 border-white bg-gray-200 shadow-2xl shadow-blue-200/60">
-            <img src="/images/hero.webp" alt="Customer tapping TapReview at a cafe counter" className="aspect-[4/3] w-full object-cover" />
+            <img src="https://images.pexels.com/photos/6612717/pexels-photo-6612717.jpeg?auto=compress&cs=tinysrgb&w=940&h=700&fit=crop" alt="Customer tapping TapReview at a cafe counter" className="aspect-[4/3] w-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
             <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between gap-4 text-white sm:bottom-7 sm:left-7 sm:right-7">
               <div>

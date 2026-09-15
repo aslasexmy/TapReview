@@ -52,7 +52,7 @@ export default function Objective() {
               </ul>
             </div>
             <div className="relative h-64 md:h-full min-h-[260px]">
-              <img src="/images/tap.webp" alt="TapReview NFC gadget on a counter" className="h-full w-full object-cover" />
+              <img src="https://images.pexels.com/photos/4226270/pexels-photo-4226270.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="TapReview NFC gadget on a counter" className="h-full w-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-r from-white/40 to-transparent md:bg-gradient-to-l md:from-transparent md:to-white/10" />
             </div>
           </div>

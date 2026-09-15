@@ -29,7 +29,7 @@ export default function Testimonials() {
               <div className="relative">
                 <p className="text-lg font-medium leading-8 sm:text-xl">\u201CSejak pasang TapReview ni, review Google kedai aku naik dari 12 ke 87 dalam masa dua bulan. Customer suka sebab senang \u2014 tak payah cari-cari.\u201D</p>
                 <div className="mt-7 flex items-center gap-3">
-                  <img src="/images/owner.webp" alt="Business owner at a cafe" className="h-12 w-12 rounded-full border-2 border-white/30 object-cover" />
+                  <img src="https://images.pexels.com/photos/19420186/pexels-photo-19420186.jpeg?auto=compress&cs=tinysrgb&w=120&h=120&fit=crop" alt="Business owner at a cafe" className="h-12 w-12 rounded-full border-2 border-white/30 object-cover" />
                   <div><p className="font-semibold">Ahmad Fauzi</p><p className="text-sm text-blue-200">Owner, Kedai Kopi Senang</p></div>
                 </div>
               </div>
@@ -48,7 +48,7 @@ export default function Testimonials() {
           {/* Image card */}
           <Reveal delay={150}>
             <div className="group relative h-full overflow-hidden rounded-[2rem]">
-              <img src="/images/queue.webp" alt="Customers at a busy cafe counter" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <img src="https://images.pexels.com/photos/36729753/pexels-photo-36729753.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop" alt="Customers at a busy cafe counter" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/65 to-transparent" />
               <p className="absolute bottom-4 left-5 text-sm font-medium text-white">More trust at the counter</p>
             </div>
@@ -65,7 +65,7 @@ export default function Testimonials() {
           {/* Stat card 2 */}
           <Reveal delay={250}>
             <div className="relative h-full overflow-hidden rounded-[2rem] bg-green-50 p-6">
-              <img src="/images/tap.webp" alt="TapReview NFC product" className="absolute inset-0 h-full w-full object-cover opacity-20 mix-blend-multiply" />
+              <img src="https://images.pexels.com/photos/4226270/pexels-photo-4226270.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop" alt="TapReview NFC product" className="absolute inset-0 h-full w-full object-cover opacity-20 mix-blend-multiply" />
               <div className="relative flex h-full flex-col justify-end"><p className="font-google text-3xl font-bold text-green-700">10 sec</p><p className="mt-1 text-sm text-gray-700">from tap to review</p></div>
             </div>
           </Reveal>
