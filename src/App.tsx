@@ -1,37 +1,36 @@
-import Navbar from '@/components/Navbar';
-import Hero from '@/components/Hero';
-import Marquee from '@/components/Marquee';
-import Problem from '@/components/Problem';
-import Objective from '@/components/Objective';
-import Stats from '@/components/Stats';
-import Features from '@/components/Features';
-import Testimonials from '@/components/Testimonials';
-import Comparison from '@/components/Comparison';
-import Pricing from '@/components/Pricing';
-import CTA from '@/components/CTA';
-import FAQ from '@/components/FAQ';
-import Contact from '@/components/Contact';
-import Footer from '@/components/Footer';
-
+import { MessageCircle } from "lucide-react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Problem from "./components/Problem";
+import Objective from "./components/Objective";
+import Features from "./components/Features";
+import Pricing from "./components/Pricing";
+import FAQ from "./components/FAQ";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import { siteContent as c } from "./siteContent.js";
+import { openWhatsApp } from "./helpers.js";
 export default function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <>
       <Navbar />
-      <main>
-        <Hero />
-        <Marquee />
-        <Problem />
-        <Objective />
-        <Stats />
-        <Features />
-        <Testimonials />
-        <Comparison />
-        <Pricing />
-        <CTA />
-        <FAQ />
-        <Contact />
+      <main id="main-content" tabIndex={-1}>
+        {c.visibility.hero && <Hero />}
+        {c.visibility.why && <Problem />}
+        {c.visibility.how && <Objective />}
+        {c.visibility.products && <Pricing />}
+        {c.visibility.services && <Features />}
+        {c.visibility.faq && <FAQ />}
+        {c.visibility.contact && <Contact />}
       </main>
       <Footer />
-    </div>
+      <button
+        className="floating-whatsapp"
+        aria-label={c.contact.floatingLabel}
+        onClick={() => openWhatsApp(c.contact.defaultMessage)}
+      >
+        <MessageCircle size={25} />
+      </button>
+    </>
   );
 }
