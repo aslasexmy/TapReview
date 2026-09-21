@@ -49,8 +49,8 @@ export const siteContent = {
   // Hero: business value comes first. No invented ratings, customers, or performance figures.
   hero: {
     eyebrow: "Google Reviews & Ratings for Local Businesses",
-    title: "Build Your Business on",
-    highlight: "Real Customer Trust.",
+    title: "Convert Walk-ins into",
+    highlight: "5⭐️ Ratings & Reviews",
     supporting: "Turn walk-ins into assets with TaptoGo™.",
     description:
       "We help your business collect more genuine Google Reviews and understand customer feedback—with simple tap-and-scan products and three months of analytics reporting.",
