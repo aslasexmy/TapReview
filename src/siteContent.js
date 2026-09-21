@@ -50,7 +50,7 @@ export const siteContent = {
   hero: {
     eyebrow: "Google Reviews & Ratings for Local Businesses",
     title: "Convert Walk-ins into",
-    highlight: "5⭐️ Ratings & Reviews",
+    highlight: "⭐️⭐️⭐️⭐️⭐️ Ratings & Reviews",
     supporting: "Turn walk-ins into assets with TaptoGo™.",
     description:
       "We help your business collect more genuine Google Reviews and understand customer feedback—with simple tap-and-scan products and three months of analytics reporting.",
