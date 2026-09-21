@@ -51,7 +51,7 @@ export const siteContent = {
     eyebrow: "Google Reviews & Ratings for Local Businesses",
     title: "Turn Walk-ins into",
     highlight: "⭐️⭐️⭐️⭐️⭐️ Ratings & Reviews",
-    supporting: "Walk-ins are your permanent assets with TaptoGo™.",
+    supporting: "Get instant 5⭐️ during payment with TaptoGo™.",
     description:
       "We help your business collect more genuine Google Reviews and understand customer feedback—with simple tap-and-scan products and three months of analytics reporting.",
     primary: "Explore Our Solutions",
