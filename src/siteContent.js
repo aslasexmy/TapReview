@@ -109,8 +109,8 @@ export const siteContent = {
     {
       id: "card",
       name: "Card NFC",
-      price: 28,
-      status: "available",
+      price: 49,
+      status: "comingsoon",
       badge: "Accessible Add-On",
       description:
         "A simple, affordable card format for keeping your review invitation within reach.",
@@ -122,7 +122,7 @@ export const siteContent = {
     {
       id: "wall",
       name: "Wall NFC",
-      price: 128,
+      price: 139,
       status: "comingSoon",
       badge: "Waterproof",
       description:
@@ -135,7 +135,7 @@ export const siteContent = {
     {
       id: "pvc",
       name: "PVC NFC",
-      price: 128,
+      price: 139,
       status: "available",
       badge: "Value for Money",
       description:
@@ -148,7 +148,7 @@ export const siteContent = {
     {
       id: "acrylic",
       name: "Acrylic NFC",
-      price: 168,
+      price: 189,
       status: "comingSoon",
       badge: "Premium",
       description:
@@ -161,7 +161,7 @@ export const siteContent = {
     {
       id: "led",
       name: "LED NFC",
-      price: 228,
+      price: 289,
       status: "comingSoon",
       badge: "Flagship",
       description:
