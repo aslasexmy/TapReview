@@ -123,6 +123,19 @@ export const siteContent = {
   // Leave image blank to use a clearly labelled illustration. Replace imageAlt with a description of your real photograph.
   products: [
     {
+      id: "pvc",
+      name: "PVC NFC",
+      price: 139,
+      status: "available",
+      badge: "Value for Money",
+      description:
+        "A durable, practical choice for everyday use at your business counter.",
+      image: "",
+      imageAlt: "Illustration of a white PVC NFC display",
+      dimensions: "9 cm × 12 cm",
+      button: "Select PVC NFC",
+    },
+    {
       id: "card",
       name: "Card NFC",
       price: 49,
@@ -147,19 +160,6 @@ export const siteContent = {
       imageAlt: "Illustration of a resin NFC wall sticker",
       dimensions: "",
       button: "Select Wall NFC",
-    },
-    {
-      id: "pvc",
-      name: "PVC NFC",
-      price: 139,
-      status: "available",
-      badge: "Value for Money",
-      description:
-        "A durable, practical choice for everyday use at your business counter.",
-      image: "",
-      imageAlt: "Illustration of a white PVC NFC display",
-      dimensions: "9 cm × 12 cm",
-      button: "Select PVC NFC",
     },
     {
       id: "acrylic",
