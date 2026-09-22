@@ -53,16 +53,29 @@ export const siteContent = {
   hero: {
     eyebrow: "Google Reviews & Ratings for Local Businesses",
     title: "Turn Walk-ins into",
-    highlight: "⭐️⭐️⭐️⭐️⭐️ Ratings & Reviews",
+    stars: "⭐️⭐️⭐️⭐️⭐️",
+    highlight: "Ratings & Reviews",
     supporting: "Get instant 5⭐️ during payment with TaptoGo™.",
     description:
       "We help your business collect more genuine Google Reviews and understand customer feedback—with simple tap-and-scan products and three months of analytics reporting.",
     primary: "Explore Our Solutions",
     secondary: "Help Me Choose",
     note: "Your clients are more than just sales.",
-    visualTitle: "Simple tools. Lasting connections.",
-    mainProductId: "pvc",
-    previews: ["card", "acrylic", "led"],
+    // Hero illustration: an example checkout moment, not a guaranteed payment duration.
+    visual: {
+      eyebrow: "The payment moment",
+      title: "3 minutes. One simple invitation.",
+      description: "Your customer is right in front of you. Make this moment an invitation to share their experience.",
+      timer: "3 min",
+      timerLabel: "Example checkout window",
+      invitation: "How was your experience? Tap here to leave a review.",
+      ownerLabel: "Business owner",
+      customerLabel: "Customer",
+      deviceLabel: "Tap or scan",
+      caption: "A natural moment to ask for honest feedback.",
+      timingNote: "Illustrative scenario. Payment time and customer attention vary.",
+      imageAlt: "A business owner and customer face one another across a payment counter. The owner invites the customer to tap an NFC display and review their experience.",
+    },
   },
   // Why genuine feedback matters.
   why: {

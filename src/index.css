@@ -485,6 +485,79 @@
     font-size: 2.4rem;
   }
 }
+/* HERO: Google-colour text travels right to left. */
+.hero-stars {
+  display: block;
+  margin: 12px 0 10px;
+  font-size: clamp(23px, 3vw, 32px);
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+}
+.hero-shimmer {
+  display: block;
+  color: #2563eb;
+}
+@supports ((background-clip: text) or (-webkit-background-clip: text)) {
+  .hero-shimmer {
+    background-image: linear-gradient(90deg, #4285f4 0%, #db4437 12.5%, #f4b400 25%, #0f9d58 37.5%, #4285f4 50%, #db4437 62.5%, #f4b400 75%, #0f9d58 87.5%, #4285f4 100%);
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: google-shimmer-left 7s linear infinite;
+  }
+}
+@keyframes google-shimmer-left {
+  from { background-position: 0% 50%; }
+  to { background-position: 100% 50%; }
+}
+/* Smaller official logo in the top navigation only. */
+header .brand-logo { width: 156px; }
+.checkout-preview {
+  min-width: 0;
+  width: 100%;
+  max-width: 580px;
+  margin-inline: auto;
+  padding: 28px 22px 22px;
+  border: 1px solid #e0e9f6;
+  border-radius: 32px;
+  background: linear-gradient(150deg, #f4f8ff, #fff 55%, #f2f9f5);
+  box-shadow: 0 16px 50px #233f6510;
+}
+.checkout-intro { padding-inline: 8px; text-align: center; }
+.checkout-intro h2 { font-size: clamp(23px, 2.2vw, 29px); line-height: 1.22; }
+.checkout-description { max-width: 410px; margin: 12px auto 0; color: #596575; font-size: 14px; line-height: 1.7; }
+.checkout-scene { position: relative; margin-top: 22px; }
+.checkout-timer {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  width: fit-content; margin: 0 auto; padding: 9px 16px;
+  border-radius: 16px; background: white; border: 1px solid #dee8f6;
+  color: #2563eb; box-shadow: 0 5px 16px #233f6508;
+}
+.checkout-timer strong { display: block; font-size: 22px; line-height: 1.2; letter-spacing: -.04em; }
+.checkout-timer span { display: block; color: #5b6879; font-size: 10px; }
+.checkout-art { display: block; width: 100%; height: auto; margin-top: -8px; }
+.checkout-invitation {
+  display: flex; align-items: flex-start; gap: 9px; margin: 0 8px;
+  border: 1px solid #dde8f6; border-radius: 16px; padding: 12px 15px;
+  background: white; color: #334663; font-size: 13px; line-height: 1.6;
+}
+.checkout-invitation svg { flex-shrink: 0; margin-top: 3px; color: #4285f4; }
+.checkout-labels { display: flex; align-items: center; justify-content: space-around; gap: 6px; margin: -16px 12px 16px; font-size: 10px; color: #596575; }
+.checkout-tap-label { display: inline-flex; align-items: center; gap: 4px; color: #2563eb; }
+.checkout-caption { margin: 19px 6px 0; padding-top: 17px; border-top: 1px solid #e2eaf4; text-align: center; }
+.checkout-caption strong { display: block; color: #334663; font-size: 12px; font-weight: 500; }
+.checkout-caption span { display: block; margin-top: 5px; color: #657184; font-size: 10px; line-height: 1.6; }
+@media (max-width: 640px) {
+  header .brand-logo { width: 128px; }
+  .checkout-preview { padding: 24px 12px 18px; border-radius: 26px; }
+  .checkout-intro { padding-inline: 6px; }
+  .checkout-labels { margin-top: -9px; font-size: 9px; }
+  .checkout-invitation { margin-inline: 3px; padding: 11px; font-size: 12px; }
+}
+@media (forced-colors: active) {
+  .hero-shimmer { background: none; color: CanvasText; }
+}
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
