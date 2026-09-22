@@ -3,7 +3,10 @@ export const siteContent = {
   // Replace this image with your own logo, or change its path. A readable wordmark appears if the image cannot load.
   brand: {
     name: "TaptoGo™",
-    logo: "/images/taptogo-logo.svg",
+    logo: "/images/taptogo-official-logo.jpeg",
+    // Display just the logo area of the original image; the uploaded file stays unchanged.
+    // Set logoCrop to null when replacing it with an image that has no outer white margins.
+    logoCrop: { x: 150, y: 596, width: 1244, height: 310, sourceWidth: 1536 },
     logoAlt: "TaptoGo™",
     home: "TaptoGo home",
   },
@@ -34,9 +37,9 @@ export const siteContent = {
   },
   navigation: {
     links: [
-      { section: "why", label: "Why TaptoGo™" },
-      { section: "how", label: "How It Works" },
       { section: "products", label: "Products" },
+      { section: "how", label: "How It Works" },
+      { section: "why", label: "Why TaptoGo™" },
       { section: "services", label: "What’s Included" },
       { section: "faq", label: "FAQ" },
     ],
@@ -110,7 +113,7 @@ export const siteContent = {
       id: "card",
       name: "Card NFC",
       price: 49,
-      status: "comingsoon",
+      status: "comingSoon",
       badge: "Accessible Add-On",
       description:
         "A simple, affordable card format for keeping your review invitation within reach.",

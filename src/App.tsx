@@ -16,9 +16,9 @@ export default function App() {
       <Navbar />
       <main id="main-content" tabIndex={-1}>
         {c.visibility.hero && <Hero />}
-        {c.visibility.why && <Problem />}
-        {c.visibility.how && <Objective />}
         {c.visibility.products && <Pricing />}
+        {c.visibility.how && <Objective />}
+        {c.visibility.why && <Problem />}
         {c.visibility.services && <Features />}
         {c.visibility.faq && <FAQ />}
         {c.visibility.contact && <Contact />}

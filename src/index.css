@@ -89,10 +89,27 @@
   }
 }
 .brand-logo {
+  display: block;
   width: 180px;
   height: 40px;
   object-fit: contain;
   object-position: left center;
+}
+.brand-logo-fit {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: left center;
+}
+.brand-logo.brand-logo-cropped {
+  position: relative;
+  overflow: hidden;
+  height: auto;
+}
+.brand-logo-source {
+  position: absolute;
+  max-width: none;
+  height: auto;
 }
 .hero-section {
   padding: 70px 0;
