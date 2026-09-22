@@ -303,6 +303,8 @@
 }
 .visual-led .material-study {
   flex-direction: column;
+  /* Tilt the panel and base together; keep the caption outside the transform. */
+  transform: perspective(800px) rotate(-8deg) rotateY(-15deg) scale(0.92);
 }
 .visual-led:not(.visual-compact) .material-study {
   flex: 1;
@@ -364,6 +366,9 @@
   width: 270%;
   height: 270%;
   flex-shrink: 0;
+}
+.visual-led.visual-compact .material-study {
+  transform: scale(0.36) perspective(800px) rotate(-8deg) rotateY(-15deg);
 }
 .faq-item summary::-webkit-details-marker {
   display: none;
