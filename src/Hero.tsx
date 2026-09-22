@@ -1,6 +1,6 @@
 import { ArrowRight, MessageCircle, Nfc } from "lucide-react";
-import { siteContent as c } from "../siteContent.js";
-import { openWhatsApp } from "../helpers.js";
+import { siteContent as c } from "./siteContent.js";
+import { openWhatsApp } from "./helpers.js";
 export default function Hero() {
   const visual = c.hero.visual;
   return (
