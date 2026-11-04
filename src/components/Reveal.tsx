@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { createElement, useEffect, useRef, useState } from 'react';
 
 type Props = {
   children: React.ReactNode;
@@ -27,15 +27,9 @@ export default function Reveal({ children, delay = 0, className = '', as = 'div'
     return () => observer.disconnect();
   }, []);
 
-  const Tag = as as keyof JSX.IntrinsicElements;
-
-  return (
-    <Tag
-      ref={ref as React.RefObject<HTMLElement>}
-      className={`reveal ${visible ? 'is-visible' : ''} ${className}`}
-      style={{ transitionDelay: `${delay}ms` }}
-    >
-      {children}
-    </Tag>
-  );
+  return createElement(as, {
+    ref,
+    className: `reveal ${visible ? 'is-visible' : ''} ${className}`,
+    style: { transitionDelay: `${delay}ms` },
+  }, children);
 }

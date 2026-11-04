@@ -9,7 +9,7 @@ export default function Navbar() {
     (l) => c.visibility[l.section as keyof typeof c.visibility],
   );
   return (
-    <header className="sticky top-0 z-40 border-b border-gray-100 bg-white/95 backdrop-blur-md">
+    <header onKeyDown={e => { if (e.key === "Escape" && open) { setOpen(false); toggle.current?.focus(); } }} className="sticky top-0 z-40 border-b border-gray-100 bg-white/95 backdrop-blur-md">
       <a className="skip-link" href="#main-content">
         {c.navigation.skip}
       </a>
@@ -35,7 +35,7 @@ export default function Navbar() {
           {c.visibility.products && (
             <a
               className="btn btn-primary nav-cta"
-              href={`#${c.sections.products}`}
+              href={`#${c.sections.devices}`}
             >
               {c.navigation.primary}
             </a>

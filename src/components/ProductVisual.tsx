@@ -16,6 +16,7 @@ export default function ProductVisual({
     >
       {product.image && !failed ? (
         <img
+          className="product-photograph"
           src={product.image}
           alt={product.imageAlt}
           width="500"
@@ -31,7 +32,7 @@ export default function ProductVisual({
             aria-label={product.imageAlt}
           >
             <div className="device">
-              <span className="device-brand">{c.brand.name}</span>
+              <span className="device-brand"><img src={c.brand.logo} alt="" width="884" height="213" /></span>
               <Nfc className="device-nfc" />
               <span className="device-copy">
                 {c.productSection.deviceLabel}

@@ -3,10 +3,10 @@ import { siteContent as c } from "../siteContent.js";
 export default function FAQ() {
   return (
     <section id={c.sections.faq} className="section pt-0">
-      <div className="wrap max-w-3xl">
+      <div className="wrap faq-layout">
         <div className="section-heading">
           <p className="eyebrow">{c.faq.eyebrow}</p>
-          <h2>{c.faq.title}</h2>
+          <h2>{c.faq.title}</h2><p className="section-description">A few things to know before choosing your Gootap.</p>
         </div>
         <div className="space-y-3">
           {c.faq.items.map((item) => (
