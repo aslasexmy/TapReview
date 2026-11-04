@@ -2,19 +2,19 @@
 export const siteContent = {
   // Replace this image with your own logo, or change its path. A readable wordmark appears if the image cannot load.
   brand: {
-    name: "TaptoGo™",
-    logo: "/images/taptogo-official-logo.jpeg",
+    name: "Gootap",
+    logo: "/images/gootap-logo.png",
     // Display just the logo area of the original image; the uploaded file stays unchanged.
     // Set logoCrop to null when replacing it with an image that has no outer white margins.
-    logoCrop: { x: 150, y: 596, width: 1244, height: 310, sourceWidth: 1536 },
-    logoAlt: "TaptoGo™",
-    home: "TaptoGo home",
+    logoCrop: null,
+    logoAlt: "Gootap",
+    home: "Gootap home",
   },
   // Search results and social sharing. The build inserts this into the HTML.
   seo: {
-    title: "TaptoGo™ | Genuine Google Reviews & Customer Insights",
+    title: "Gootap | NFC Devices & Merchant Counter Systems",
     description:
-      "Turn customer visits into genuine Google Reviews, useful feedback, and lasting trust with TaptoGo™ NFC and QR products and three months of analytics reporting.",
+      "Help customers find your review, menu and contact links with Gootap NFC and QR solutions.",
   },
   // Turn sections on or off. The navigation automatically excludes hidden sections.
   visibility: {
@@ -22,28 +22,31 @@ export const siteContent = {
     why: true,
     how: true,
     products: true,
-    services: true,
+    devices: true,
+    services: false,
     faq: true,
     contact: true,
   },
   sections: {
     hero: "home",
-    why: "why-taptogo",
+    why: "why-gootap",
     how: "how-it-works",
     products: "products",
+    devices: "devices",
     services: "whats-included",
     faq: "faq",
     contact: "contact",
   },
   navigation: {
     links: [
-      { section: "products", label: "Products" },
+      { section: "devices", label: "Devices" },
+      { section: "products", label: "Systems" },
       { section: "how", label: "How It Works" },
-      { section: "why", label: "Why TaptoGo™" },
+      { section: "why", label: "Why Gootap" },
       { section: "services", label: "What’s Included" },
       { section: "faq", label: "FAQ" },
     ],
-    primary: "Find Your Solution",
+    primary: "Find your device",
     open: "Open menu",
     close: "Close menu",
     label: "Main navigation",
@@ -52,12 +55,12 @@ export const siteContent = {
   // Hero: business value comes first. No invented ratings, customers, or performance figures.
   hero: {
     eyebrow: "Google Reviews & Ratings for Local Businesses",
-    title: "Turn Walk-ins into",
-    stars: "⭐️⭐️⭐️⭐️⭐️",
-    highlight: "Ratings & Reviews",
-    supporting: "Get instant 5⭐️ during payment with TaptoGo™.",
+    title: "Make every visit a chance to",
+    stars: "",
+    highlight: "connect",
+    supporting: "Give customers a simple way to share their experience.",
     description:
-      "We help your business collect more genuine Google Reviews and understand customer feedback—with simple tap-and-scan products and three months of analytics reporting.",
+      "Make it easier for customers to find your review, menu and contact links with a simple tap or scan.",
     primary: "Explore Our Solutions",
     secondary: "Help Me Choose",
     note: "Your clients are more than just sales.",
@@ -79,7 +82,7 @@ export const siteContent = {
   },
   // Why genuine feedback matters.
   why: {
-    eyebrow: "Why TaptoGo™",
+    eyebrow: "Why Gootap",
     title: "Every Visit Can Build Lasting Trust.",
     cards: [
       {
@@ -107,7 +110,7 @@ export const siteContent = {
         text: "Give your customers an experience worth sharing.",
       },
       {
-        title: "Introduce TaptoGo™ at Payment",
+        title: "Introduce Gootap at Payment",
         text: "Invite them to tap or scan before they leave.",
         example:
           "“Would you like to share your experience on Google? Just tap or scan here.”",
@@ -117,7 +120,7 @@ export const siteContent = {
         text: "They open your Google Review page and share their honest feedback.",
       },
     ],
-    note: "Open the review page in seconds. Writing and submitting a review takes as long as the customer needs.",
+    note: "Customers choose whether to leave a review and what to say.",
   },
   // Products: prices must be numbers. Status is either available or comingSoon. Images go in public/images/.
   // Leave image blank to use a clearly labelled illustration. Replace imageAlt with a description of your real photograph.
@@ -188,12 +191,24 @@ export const siteContent = {
       button: "Select LED NFC",
     },
   ],
+  systems: [
+    {
+      id: "starter", name: "Starter", price: 1390, status: "comingSoon",
+      badge: "Proposed package", description: "A 7-inch Android counter display, branded NFC/QR stand and basic audio device, with setup and 12 months of limited hosting and support.",
+      image: "", imageAlt: "", dimensions: "7-inch display target", button: "Enquire about Starter",
+    },
+    {
+      id: "plus", name: "Plus", price: 2390, status: "comingSoon",
+      badge: "Proposed package", description: "A 10.1-inch Android counter display, branded NFC/QR stand and upgraded audio device, with setup and 12 months of limited hosting and support.",
+      image: "", imageAlt: "", dimensions: "10.1-inch display target", button: "Enquire about Plus",
+    },
+  ],
   productSection: {
     eyebrow: "Our solutions",
-    title: "One Solution. A Product for Every Business.",
+    title: "A counter system for your business.",
     description:
-      "Choose the format that fits your counter, wall, or everyday customer interactions.",
-    instruction: "Swipe or use the arrows to explore.",
+      "Starter and Plus are planned packages. Specifications and availability are subject to testing and confirmation.",
+    instruction: "Prices are proposed one-time package prices. Contact us for current availability and terms.",
     previous: "Previous products",
     next: "Next products",
     carouselLabel: "Product range",
@@ -222,7 +237,7 @@ export const siteContent = {
         badge: "",
       },
       {
-        title: "Early Access to the TaptoGo™ Ecosystem",
+        title: "Early Access to the Gootap Ecosystem",
         text: "Access our upcoming ecosystem as it becomes available.",
         badge: "Coming Soon",
       },
@@ -237,23 +252,23 @@ export const siteContent = {
     title: "Good Questions. Clear Answers.",
     items: [
       {
-        question: "What does TaptoGo™ do?",
+        question: "What does Gootap do?",
         answer:
-          "We provide tap-and-scan products and supporting services that help local businesses collect genuine Google Reviews and understand customer feedback.",
+          "Gootap helps businesses direct customers to review, menu and contact links. Our proposed counter systems bring a display and NFC/QR stand together.",
       },
       {
         question: "Which product should I choose?",
         answer:
-          "Card NFC is an accessible add-on, while PVC NFC offers everyday durability and value. Wall, Acrylic, and LED options are coming soon. Message us for help choosing.",
+          "Choose a standalone NFC device for a simple tap-and-scan point, or ask about our planned Starter and Plus counter systems.",
       },
       {
-        question: "What comes with my purchase?",
+        question: "Are the systems available to order?",
         answer:
-          "Every product includes three months of analytics reporting, an AI-powered system, and early access to the TaptoGo™ ecosystem when it becomes available.",
+          "Starter and Plus are planned packages. Their hardware, software and service terms are subject to testing and confirmation. You can enquire about them on WhatsApp.",
       },
       {
         question: "What if a customer cannot use NFC?",
-        answer: "They can use the QR option to access your review page.",
+        answer: "A QR code can direct customers to your review page when they cannot use NFC.",
       },
       {
         question: "Does the customer need internet access?",
@@ -261,14 +276,14 @@ export const siteContent = {
           "Yes. Their phone needs internet access to open Google and submit feedback.",
       },
       {
-        question: "Will TaptoGo™ guarantee higher ratings?",
+        question: "Will Gootap guarantee higher ratings?",
         answer:
-          "No. Ratings depend on honest customer feedback. TaptoGo™ makes it easier for customers to share their experience.",
+          "No. Ratings depend on honest customer feedback. Gootap makes it easier for customers to share their experience.",
       },
       {
-        question: "What happens after three months?",
+        question: "What support is available?",
         answer:
-          "The included analytics reporting period ends after three months. Contact us to discuss available ongoing support.",
+          "Contact us for the current setup and support terms for your chosen product.",
       },
     ],
   },
@@ -278,33 +293,33 @@ export const siteContent = {
     displayNumber: "011-6298 8960",
     whatsappLabel: "WhatsApp",
     floatingLabel: "Chat on WhatsApp",
-    defaultMessage: "Hi, I’m interested in TaptoGo™. I’d like to know more.",
+    defaultMessage: "Hi, I’m interested in Gootap. I’d like to know more.",
     chooseMessage:
-      "Hi, I’m interested in TaptoGo™. Can you help me choose the right product for my business?",
+      "Hi, I’m interested in Gootap. Can you help me choose the right product for my business?",
     enquiryMessage:
-      "Hi, I’m interested in {product} from TaptoGo™. Please tell me more about its availability.",
+      "Hi, I’m interested in {product} from Gootap. Please tell me more about its availability.",
     setup: "WhatsApp is not configured yet. Please check back soon.",
     eyebrow: "Let’s talk about your business",
     title: "Your Next Business Investment Starts With Your Customers.",
     description:
-      "Build a stronger foundation for customer trust. Let us help you choose the right TaptoGo™ solution.",
+      "Build a stronger foundation for customer trust. Let us help you choose the right Gootap solution.",
     primary: "Explore Products",
     secondary: "Talk to Us",
   },
   // Order modal and message. A WhatsApp enquiry is not a payment or a confirmed order.
   order: {
-    title: "Choose your next step.",
-    eyebrow: "Your TaptoGo™ solution",
+    title: "Enquire about your device.",
+    eyebrow: "Your Gootap solution",
     close: "Close order form",
     quantity: "Quantity",
-    unitPrice: "Unit price",
+    unitPrice: "Device price",
     total: "Product total",
     product: "Product",
     button: "Continue on WhatsApp",
     note: "Confirm delivery and payment details with us on WhatsApp.",
     privacy:
       "Your details are shared only when you continue to WhatsApp. You still need to send the message there.",
-    intro: "Hi, I’m interested in ordering from TaptoGo™.",
+    intro: "Hi, I’m interested in ordering from Gootap.",
     ending:
       "Please confirm availability, delivery and payment details. This is an enquiry, not a confirmed order.",
     invalidQuantity: "Enter a whole quantity of at least 1.",
@@ -351,9 +366,9 @@ export const siteContent = {
   // Footer: only real contact information. No testimonials or invented social proof.
   footer: {
     description:
-      "TaptoGo™ — practical solutions for Google Reviews, Ratings, and customer trust.",
+      "Gootap. Simple connections for everyday business.",
     year: 2026,
-    copyright: "TaptoGo™. All rights reserved.",
+    copyright: "Gootap. All rights reserved.",
     disclaimer:
       "Independent business solutions. Not affiliated with or endorsed by Google.",
     navigation: "Footer navigation",
